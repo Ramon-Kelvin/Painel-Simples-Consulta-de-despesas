@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/fontawesome/css/all.css">
+
+</head>
+<body>
+	<div id="app">
+		<div id="navbar">
+			<a id="logo" href="#"><b>Painel</b> Simples</a>
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="addAlert">
+		<div id="alertTxt">
+			<p>Alerta simples usando Javascript.</p>
+			<i class="fas fa-lightbulb"></i>
+			<p style="color: #ff5252;">Ajude-nos</p>
+		</div>
+		<i id="closeBox" class="fas fa-times" style="color: #ff5252; cursor: pointer;"></i>
+	</div>
+	<div id="containerMain">
+		<p id="titleMain">Consulta de despesas</p>
+		<div id="inputs">
+			<input type="text" id="n1" name="nome" placeholder="Nome">
+			<input type="text" id="n2" name="ano" placeholder="Ano">
+			<input type="text" id="n3" name="mes" placeholder="Mês">
+			<input type="text" id="n4" name="dia" placeholder="Dia">
+			<input type="text" id="n5" name="descricao" placeholder="Descrição">
+			<input type="text" id="n7" name="capital" placeholder="Capital">
+			<input type="text" id="n6" name="investimento" placeholder="Investimento">
+				<i id="btnGet" class="fas fa-search" style="color: #ff5252;"></i>
+		</div>
+		<div id="resultMain">
+
+			<table id="table">
+			  <tr id="titleTable" style="width: 100%;">
+			    <th>Nome</th>
+			    <th>Data</th>
+			    <th>Descrição</th>
+			    <th>Capital</th>
+			    <th>Investimento</th>
+			  </tr>
+			</table>
+		</div>
+		<div id="alertBoxDisplay" style="display: none;">
+			<div id="alertBox">
+				<div id="titleAlertBox">Aviso</div>
+				<div id="contentAlertBox">Preecha os formularios corretamente</div>
+				<div id="btnCloseAlert"><input id="submitAlertBox" type="submit" name="close" value="Voltar" style="cursor: pointer;"></div>
+			</div>
+		</div>	
+	</div>
+	<script src="static/js/app.js"></script>
+</body>
+</html>
